@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: root
+Build-Jdk: 1.8.0_241
+Extension-Name: pipeline-global-lib-nexus
+Specification-Title: Used for retrieving shared groovy libraries from 
+ Nexus
+Implementation-Title: pipeline-global-lib-nexus
+Implementation-Version: 0.2.3
+Group-Id: com.roylenferink.jenkins.plugins
+Short-Name: pipeline-global-lib-nexus
+Long-Name: Pipeline: Shared Groovy Libraries through Nexus retrieval
+Url: https://github.com/jenkinsci/pipeline-global-lib-nexus-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 0.2.3
+Hudson-Version: 2.150.3
+Jenkins-Version: 2.150.3
+Plugin-Dependencies: workflow-cps-global-lib:2.10
+Plugin-Developers: Roy Lenferink:rlenferink:rlenferink@apache.org
+
