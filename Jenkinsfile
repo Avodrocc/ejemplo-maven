@@ -1,5 +1,5 @@
 import groovy.json.JsonSlurperClassic
-pipeline {
+pipeline { 
     agent any
     stages {
         stage("Paso 1: Compliar"){
