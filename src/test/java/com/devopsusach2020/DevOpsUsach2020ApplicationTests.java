@@ -8,9 +8,14 @@ class DevOpsUsach2020ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		DevOpsUsach2020ApplicationTests myClass = new DevOpsUsach2020ApplicationTests();
-		assertNull(myClass.doSomething());  // JUnit assertion
-		
+
+	}
+
+	@Test
+	public void testDoSomething() {
+	  DevOpsUsach2020ApplicationTests myClass = new DevOpsUsach2020ApplicationTests();
+	  assertNull(myClass.contextLoads());  // JUnit assertion
+	  assertThat(myClass.contextLoads()).isNull();  // Fest assertion
 	}
 
 }
