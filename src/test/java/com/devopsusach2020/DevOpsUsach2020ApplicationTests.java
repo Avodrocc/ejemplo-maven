@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DevOpsUsach2020ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 		
 		System.out.println("Evitar la assertion");
 		
