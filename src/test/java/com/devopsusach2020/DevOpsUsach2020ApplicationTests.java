@@ -7,9 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 class DevOpsUsach2020ApplicationTests {
 
 	@Test
-	public void contextLoads() {
+	void contextLoads() {
 		
-		System.out.println("Evitar la assertion");
+		assertNull(myClass.doSomething());  // JUnit assertion
 		
 	}
 
