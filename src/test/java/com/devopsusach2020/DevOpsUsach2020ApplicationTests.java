@@ -16,5 +16,13 @@ class DevOpsUsach2020ApplicationTests {
 		assertEquals(result1, result2);
 
 	}
+	@Test
+	void contextLoads1() {
+
+		float result1 = 10;
+		float result2 = 10;
+		assertEquals(result1, result2);
+
+	}
 
 }
