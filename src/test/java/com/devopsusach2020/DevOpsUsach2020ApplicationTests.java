@@ -8,7 +8,7 @@ class DevOpsUsach2020ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		RestData myClass = new RestData();
+		DevOpsUsach2020ApplicationTests myClass = new DevOpsUsach2020ApplicationTests();
 		assertNull(myClass.doSomething());  // JUnit assertion
 		
 	}
