@@ -1,5 +1,8 @@
 import groovy.json.JsonSlurperClassic
-pipeline {     
+def jsonParse(def json) {
+    new groovy.json.JsonSlurperClassic().parseText(json)
+}
+pipeline {
     agent any
     stages {
         stage("Paso 1: Compliar"){
@@ -35,6 +38,15 @@ pipeline {
                 }
             }
         }
+        stage("Paso 4: Análisis SonarQube"){
+            steps {
+                withSonarQubeEnv('sonar') {
+                    sh "echo 'Calling sonar Service in another docker container!'"
+                    // Run Maven on a Unix agent to execute Sonar.
+                    sh 'mvn clean verify sonar:sonar'
+                }
+            }
+        }
     }
     post {
         always {
@@ -48,16 +60,5 @@ pipeline {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
