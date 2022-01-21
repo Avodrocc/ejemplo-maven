@@ -48,7 +48,7 @@ pipeline {
             }
         }
 	        stage("Paso 5: Levantar Springboot APP"){
-            steps { 
+            steps {
                 sh 'mvn spring-boot:run &'
             }
         }
