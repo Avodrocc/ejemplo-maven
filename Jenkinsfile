@@ -37,7 +37,7 @@ pipeline {
                     archiveArtifacts artifacts:'build/*.jar'
                 }
             }
-        }
+        }  
         stage("Paso 4: Análisis SonarQube"){
             steps {
                 withSonarQubeEnv('sonar') {
