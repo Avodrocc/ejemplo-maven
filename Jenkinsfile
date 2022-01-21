@@ -30,7 +30,7 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh "mvn clean package -e"
                 }
-            }
+            }  
             post {
                 //record the test results and archive the jar file.
                 success {
