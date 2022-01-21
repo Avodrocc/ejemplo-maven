@@ -45,7 +45,7 @@ pipeline {
                     // Run Maven on a Unix agent to execute Sonar.
                     sh 'mvn clean verify sonar:sonar'
                 }
-            }
+            }  
         }
 	        stage("Paso 5: Levantar Springboot APP"){
             steps {
