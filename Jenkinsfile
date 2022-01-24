@@ -22,7 +22,7 @@ pipeline {
                 sh "mvn clean test -e"
                 }
             }
-        }  
+        }    
         stage("Paso 3: Build .Jar"){
             steps {
                 script {
