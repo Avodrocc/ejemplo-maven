@@ -38,7 +38,7 @@ pipeline {
                 }
             }
         }  
-        stage("Paso 4: Análisis SonarQube"){
+        stage("Paso 4: Análisis SonarQube"){  
             steps {
                 withSonarQubeEnv('sonarqube') {
                     sh "echo 'Calling sonar Service in another docker container!'"
